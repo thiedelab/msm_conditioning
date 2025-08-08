@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [
+   { name = "Yehor Tuchkov", email = "eht45@cornell.edu"},
+]
+name = "msm_playground"
+version = "0.0.1"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "cycler",
+    "numba",
+    "pyemma",
+    "scipy",
+    "scikit-learn",
+]
