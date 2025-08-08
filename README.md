@@ -13,31 +13,24 @@ A created MSM can be used to compute various properties, such as:
 - mean first passage times (MFPT) and corresponding linear equations for diagnostic purposes
 - stationary distribution
 
-### Tests
-
-To run tests, run the following command in the root directory of the project:
-
-```bash
-pytest tests/
-```
 
 ### Diagnostic scripts
 
 ##### double well system
-- `src/diagnostics/double_well/`
+- `diagnostics/double_well/`
 ![Triple well system](./media/double_well_system.jpg)
 ##### triple well system
-- `src/diagnostics/triple_well/`
+- `diagnostics/triple_well/`
 ![Triple well system](./media/triple_well_system.jpg)
 ##### Müller-Brown system
-- src/diagnostics/mueller_brown/mb_diagn_pipeline_committor.py
-- src/diagnostics/mueller_brown/mb_diagn_pipeline_mfpt.py
+- diagnostics/mueller_brown/mb_diagn_pipeline_committor.py
+- diagnostics/mueller_brown/mb_diagn_pipeline_mfpt.py
 ![Triple well system](./media/mb_system.jpg)
 
 # Plot registry
 
-| Plot Description                                                     | Script                                                      | Data                |
-| -------------------------------------------------------------------- | ----------------------------------------------------------- | ------------------- |
-| Comparing naive vs stopped process committors on triple well system  | `src/diagnostics/triple_well/1D_triple_well_diagnostics.py` | `data/triple_well/` |
-| Committor approximation error on Müller-Brown system                 | `src/diagnostics/committor_error_new_states.py`             | `data/mb/inf-data/committor/` |
-| MFPT approximation error on Müller-Brown system                      | `src/diagnostics/mfpt_error_new_states.py`                  | `data/mb/inf-data/mfpt` |
+| Plot Description                                                     | Script                                                  |
+| -------------------------------------------------------------------- | ------------------------------------------------------- |
+| Comparing naive vs stopped process committors on triple well system  | `diagnostics/triple_well/1D_triple_well_diagnostics.py` |
+| Committor approximation error on Müller-Brown system                 | `diagnostics/committor_error_new_states.py`             |
+| MFPT approximation error on Müller-Brown system                      | `diagnostics/mfpt_error_new_states.py`                  |
